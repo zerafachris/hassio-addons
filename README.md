@@ -50,7 +50,24 @@ https://github.com/zerafachris/hassio-addons
 
 - [Limnoria](limnoria/) : Limnoria is a robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.
 
+<!-- TO DO 
+https://docs.linuxserver.io/images/docker-mstream
+https://docs.linuxserver.io/images/docker-mylar3
+https://docs.linuxserver.io/images/docker-nano-wallet
+https://docs.linuxserver.io/images/docker-nntp2nntp
+https://docs.linuxserver.io/images/docker-oscam 
+-->
+
 - [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
+<!-- TO DO
+https://docs.linuxserver.io/images/docker-photoshow
+https://docs.linuxserver.io/images/docker-pixapop
+https://docs.linuxserver.io/images/docker-pydio-cells
+https://docs.linuxserver.io/images/docker-rsnapshot
+https://docs.linuxserver.io/images/docker-smokeping
+https://docs.linuxserver.io/images/docker-taisun
+
+ -->
 
 [//]: # "ADDONLIST_END"
 [smb-shield]: https://img.shields.io/badge/SMB--green?style=plastic.svg
