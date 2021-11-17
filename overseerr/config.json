@@ -53,6 +53,6 @@
   "startup": "services",
   "upstream": "3.2.2.5080",
   "url": "https://github.com/zerafachris/hassio-addons",
-  "version": "3.2.2.5080-5",
+  "version": "0.0.0.1",
   "webui": "http://[HOST]:[PORT:7878]"
 }

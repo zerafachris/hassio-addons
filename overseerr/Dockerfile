@@ -3,20 +3,18 @@ ARG BUILD_VERSION
 FROM ${BUILD_FROM}
 ARG BASHIO_VERSION=0.13.1
 
+# Copy root filesystem
+VOLUME [ "/config" ]
+ENV TZ=Europe/Paris
+
 RUN \
     ################
     # Install apps #
     ################
-    apt-get clean \
-    && apt-get update \
-    && apt-get install -y \
-    jq \
-    curl \
-    cifs-utils \
-    keyutils \
-    samba \
-    smbclient \
-    \ 
+    apk add --no-cache \
+      curl \
+      jq \
+    \
     ###################
     # Install bashio #
     ##################
@@ -25,16 +23,18 @@ RUN \
     | tar -xzf - --strip 1 -C /tmp/bashio \
     && mv /tmp/bashio/lib /usr/lib/bashio \
     && ln -s /usr/lib/bashio/bashio /usr/bin/bashio \
-    && rm -rf /tmp/bashio \
-    \
-    # use /data instead of /config for hass.io environment
-    && sed -i "s|/config|/config/overseerr|g" /etc/services.d/overseerr/run \
-    && sed -i "s|/config|/config/overseerr|g" /etc/cont-init.d/30-config \
-    \
-    # Allow UID and GID setting
-    && sed -i 's/bash/bashio/g' /etc/cont-init.d/10-adduser \
+    && rm -rf /tmp/bashio 
+
+# Allow UID and GID setting
+RUN sed -i 's/bash/bashio/g' /etc/cont-init.d/10-adduser \
     && sed -i 's/{PUID:-911}/(bashio::config "PUID")/g' /etc/cont-init.d/10-adduser \
     && sed -i 's/{PGID:-911}/(bashio::config "PGID")/g' /etc/cont-init.d/10-adduser
+
+# Correct config folder
+RUN grep -rl " /config" /etc/cont-init.d | xargs sed -i 's| /config| /config/overseerr|g' || true \
+    && grep -rl "/config" /etc/services.d | xargs sed -i 's|/config|/config/overseerr|g' || true \
+    && sed -i 's=/config/overseerr=/config/overseerr || true=g' /etc/cont-init.d/10-adduser || true
+
 
 # copy local files
 COPY root/ /
