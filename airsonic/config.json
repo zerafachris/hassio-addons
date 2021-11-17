@@ -1,0 +1,55 @@
+{
+  "apparmor": true,
+  "arch": ["aarch64", "amd64", "armv7", "armhf"],
+  "boot": "auto",
+  "description": "Airsonic is a free, web-based media streamer, providing ubiquitous access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+  "devices": [
+    "/dev/sda1",
+    "/dev/sdb1",
+    "/dev/sdc1",
+    "/dev/sdd1",
+    "/dev/sde1",
+    "/dev/sdf1",
+    "/dev/sdg1",
+    "/dev/sda2",
+    "/dev/sdb2",
+    "/dev/sdc2",
+    "/dev/sdd2",
+    "/dev/sde2",
+    "/dev/sdf2",
+    "/dev/sdg2"
+  ],
+  "environment": {
+    "PUID": "0",
+    "PGID": "0"
+  },
+  "map": ["config:rw", "share:rw", "media:rw", "ssl"],
+  "name": "airsonic",
+  "options": {
+    "PUID": 0,
+    "PGID": 0,
+    "TZ": "Europe/London",
+    "CONTEXT_PATH": "<username>",
+    "JAVA_OPTS": "<password>"
+  },
+  "ports": {
+    "4040/tcp": 4040
+  },
+  "ports_description": {
+    "4040/tcp": "web interface"
+  },
+  "privileged": ["SYS_ADMIN", "DAC_READ_SEARCH"],
+  "schema": {
+    "PUID": "int",
+    "PGID": "int",
+    "TZ": "str?",
+    "CONTEXT_PATH": "str?",
+    "JAVA_OPTS": "str?"
+  },
+  "slug": "airsonic",
+  "startup": "services",
+  "upstream": "0.0.0.1",
+  "url": "https://github.com/zerafachris/hassio-addons",
+  "version": "0.0.0.1",
+  "webui": "http://[HOST]:[PORT:4040]"
+}

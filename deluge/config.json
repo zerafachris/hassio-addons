@@ -1,0 +1,53 @@
+{
+  "apparmor": true,
+  "arch": ["aarch64", "amd64", "armv7", "armhf"],
+  "boot": "auto",
+  "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client.",
+  "devices": [
+    "/dev/sda1",
+    "/dev/sdb1",
+    "/dev/sdc1",
+    "/dev/sdd1",
+    "/dev/sde1",
+    "/dev/sdf1",
+    "/dev/sdg1",
+    "/dev/sda2",
+    "/dev/sdb2",
+    "/dev/sdc2",
+    "/dev/sdd2",
+    "/dev/sde2",
+    "/dev/sdf2",
+    "/dev/sdg2"
+  ],
+  "environment": {
+    "PUID": "0",
+    "PGID": "0"
+  },
+  "map": ["config:rw", "share:rw", "media:rw", "ssl"],
+  "name": "deluge",
+  "options": {
+    "PUID": 0,
+    "PGID": 0,
+    "TZ": "Europe/London",
+    "DELUGE_LOGLEVEL": "error"
+  },
+  "ports": {
+    "8112/tcp": 8112
+  },
+  "ports_description": {
+    "8112/tcp": "web interface"
+  },
+  "privileged": ["SYS_ADMIN", "DAC_READ_SEARCH"],
+  "schema": {
+    "PUID": "int",
+    "PGID": "int",
+    "TZ": "str?",
+    "DELUGE_LOGLEVEL": "str?"
+  },
+  "slug": "deluge",
+  "startup": "services",
+  "upstream": "3.2.2.5080",
+  "url": "https://github.com/zerafachris/hassio-addons",
+  "version": "0.0.0.1",
+  "webui": "http://[HOST]:[PORT:8112]"
+}

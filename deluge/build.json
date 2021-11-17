@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/deluge:arm32v7-latest",
+    "armv7": "linuxserver/deluge:arm32v7-latest",
+    "aarch64": "linuxserver/deluge:arm64v8-latest",
+    "amd64": "linuxserver/deluge:amd64-latest"
+  }
+}
