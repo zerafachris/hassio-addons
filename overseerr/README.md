@@ -1,6 +1,6 @@
 # Home assistant add-on: Overseerr
 
-<!-- [![Donate][donation-badge]](https://www.buymeacoffee.com/zerafachris)
+[![Donate][donation-badge]](https://www.buymeacoffee.com/zerafachris)
 
 [donation-badge]: https://img.shields.io/badge/Buy%20me%20a%20coffee-%23d32f2f?logo=buy-me-a-coffee&style=flat&logoColor=white
 
@@ -11,13 +11,14 @@
 _Thanks to everyone having starred my repo! To star it click on the image below, then it will be on top right. Thanks!_
 
 [![Stargazers repo roster for @zerafachris/hassio-addons](https://reporoster.com/stars/zerafachris/hassio-addons)](https://github.com/zerafachris/hassio-addons/stargazers)
+[![Forkers repo roster for @zerafachris/hassio-addons](https://reporoster.com/forks/zerafachris/hassio-addons)](https://github.com/zerafachris/hassio-addons/network/members)
 
 ## About
 
 ---
 
-[Radarr](https://radarr.video/) Radarr is a movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available.
-This addon is based on the docker image https://github.com/linuxserver/docker-radarr
+[Overseerr](https://overseerr.dev/) is a request management and media discovery tool built to work with your existing Plex ecosystem.
+This addon is based on the docker image https://docs.linuxserver.io/images/docker-overseerr
 
 ## Installation
 
@@ -60,11 +61,11 @@ Create an issue on github
 
 ---
 
-![illustration](https://dausruddin.com/wp-content/uploads/2020/05/radarr-v3-1024x515.png)
+![illustration](https://overseerr.dev/_next/image?url=%2Fscreenshots%2Fscreen_main.jpg&w=3840&q=75)
 
 [repository]: https://github.com/zerafachris/hassio-addons
 [smb-shield]: https://img.shields.io/badge/smb-yes-green.svg
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg -->
+[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg

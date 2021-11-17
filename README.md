@@ -9,17 +9,18 @@
 _Thanks to everyone having starred my repo! To star it click on the image below, then it will be on top right. Thanks!_
 
 [![Stargazers repo roster for @zerafachris/hassio-addons](https://reporoster.com/stars/zerafachris/hassio-addons)](https://github.com/zerafachris/hassio-addons/stargazers)
+[![Forkers repo roster for @zerafachris/hassio-addons](https://reporoster.com/forks/zerafachris/hassio-addons)](https://github.com/zerafachris/hassio-addons/network/members)
 
 ## About
 
 My home assistant addon repository.
 In case of issue, create an issue in the repository and reference the full log from supervisor (all red or white text).
 
-- ![smb][smb-shield] : allows accessing smb shares, or a local external disk
+<!-- - ![smb][smb-shield] : allows accessing smb shares, or a local external disk
 - ![ingress][ingress-shield] : supports Ingress
 - ![sql][sql-shield] : requires an external sql database server
 - ![privileged][privileged-shield] : requires protection mode off to run
-- ![ram][ram-shield] : a minimum of 4gb of RAM is recommended to avoid crashing the system
+- ![ram][ram-shield] : a minimum of 4gb of RAM is recommended to avoid crashing the system -->
 
 ## Installation
 
@@ -33,6 +34,14 @@ https://github.com/zerafachris/hassio-addons
 
 [//]: # "ADDONLIST_START"
 
-## &#10003; ADD_ONS
+## &#10003; Add-ons:
 
-- [overseerr](overseerr/) : overseerr
+- [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
+
+[//]: # "ADDONLIST_END"
+[smb-shield]: https://img.shields.io/badge/SMB--green?style=plastic.svg
+[sql-shield]: https://img.shields.io/badge/SQL-external-orange.svg
+[privileged-shield]: https://img.shields.io/badge/privileged-required-orange.svg
+[ingress-shield]: https://img.shields.io/badge/ingress--green.svg
+[support-shield]: https://img.shields.io/badge/Support-thread-green.svg
+[ram-shield]: https://img.shields.io/badge/RAM_min-4Gb-orange.svg
