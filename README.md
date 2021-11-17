@@ -37,9 +37,15 @@ https://github.com/zerafachris/hassio-addons
 ## &#10003; Add-ons:
 
 - [airsonic](airsonic/) : Airsonic is a free, web-based media streamer, providing ubiquitous access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.
+
 - [deluge](deluge/) : Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
+
 - [digikam](digikam/) : Digikam is a Professional Photo Management with the Power of Open Source.
+
 - [EmbyStat](embystat/) is a personal web server that can calculate all kinds of statistics from your (local) Emby or Jellyfin server. Just install this on your server and let him calculate all kinds of fun stuff.
+
+- [Filezilla](filezilla/) : Filezilla is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.
+
 - [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
 
 [//]: # "ADDONLIST_END"
