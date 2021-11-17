@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/digikam:arm32v7-latest",
+    "armv7": "linuxserver/digikam:arm32v7-latest",
+    "aarch64": "linuxserver/digikam:arm64v8-latest",
+    "amd64": "linuxserver/digikam:amd64-latest"
+  }
+}

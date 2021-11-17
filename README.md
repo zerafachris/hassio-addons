@@ -38,6 +38,7 @@ https://github.com/zerafachris/hassio-addons
 
 - [airsonic](airsonic/) : Airsonic is a free, web-based media streamer, providing ubiquitous access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.
 - [deluge](deluge/) : Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
+- [digikam](digikam/) : Digikam is a Professional Photo Management with the Power of Open Source
 - [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
 
 [//]: # "ADDONLIST_END"
