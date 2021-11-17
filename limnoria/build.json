@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/limnoria:arm32v7-latest",
+    "armv7": "linuxserver/limnoria:arm32v7-latest",
+    "aarch64": "linuxserver/limnoria:arm64v8-latest",
+    "amd64": "linuxserver/limnoria:amd64-latest"
+  }
+}

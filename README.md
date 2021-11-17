@@ -48,6 +48,8 @@ https://github.com/zerafachris/hassio-addons
 
 - [Fleet](fleet/) : Fleet provides an online web interface which displays a set of maintained images from one or more owned repositories.
 
+- [Limnoria](limnoria/) : Limnoria is a robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.
+
 - [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
 
 [//]: # "ADDONLIST_END"
