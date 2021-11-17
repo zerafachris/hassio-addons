@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/overseerr:arm32v7-latest",
+    "armv7": "linuxserver/overseerr:arm32v7-latest",
+    "aarch64": "linuxserver/overseerr:arm64v8-latest",
+    "amd64": "linuxserver/overseerr:amd64-latest"
+  }
+}
