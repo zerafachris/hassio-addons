@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/fleet:arm32v7-latest",
+    "armv7": "linuxserver/fleet:arm32v7-latest",
+    "aarch64": "linuxserver/fleet:arm64v8-latest",
+    "amd64": "linuxserver/fleet:amd64-latest"
+  }
+}

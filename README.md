@@ -46,6 +46,8 @@ https://github.com/zerafachris/hassio-addons
 
 - [Filezilla](filezilla/) : Filezilla is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.
 
+- [Fleet](fleet/) : Fleet provides an online web interface which displays a set of maintained images from one or more owned repositories.
+
 - [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
 
 [//]: # "ADDONLIST_END"
