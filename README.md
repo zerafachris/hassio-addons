@@ -64,10 +64,9 @@ https://github.com/zerafachris/hassio-addons
 
 - [pixapop](pixapop/) : Pixapop is an open-source single page application to view your photos in the easiest way possible.
 
+- [Rsnapshot](rsnapshot/) : Rsnapshot is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.
+
 <!-- TO DO
-https://docs.linuxserver.io/images/docker-pixapop
-https://docs.linuxserver.io/images/docker-pydio-cells
-https://docs.linuxserver.io/images/docker-rsnapshot
 https://docs.linuxserver.io/images/docker-smokeping
 https://docs.linuxserver.io/images/docker-taisun
 
