@@ -62,9 +62,9 @@ https://github.com/zerafachris/hassio-addons
 
 - [photoshow](photoshow/) : Photoshow is gallery software at its easiest, it doesn't even require a database.
 
+- [pixapop](pixapop/) : Pixapop is an open-source single page application to view your photos in the easiest way possible.
 
 <!-- TO DO
-https://docs.linuxserver.io/images/docker-photoshow
 https://docs.linuxserver.io/images/docker-pixapop
 https://docs.linuxserver.io/images/docker-pydio-cells
 https://docs.linuxserver.io/images/docker-rsnapshot
