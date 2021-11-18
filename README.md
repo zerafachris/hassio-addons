@@ -56,11 +56,7 @@ https://github.com/zerafachris/hassio-addons
 
 - [nano-wallet](nano-wallet/) : nano-wallet is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This is a nginx wrapper for the light wallet located [here](https://github.com/linuxserver/nano-wallet). You will need to pass a valid RPC host when accessing this container.
 
-<!-- TO DO 
-https://docs.linuxserver.io/images/docker-nano-wallet
-https://docs.linuxserver.io/images/docker-nntp2nntp
-https://docs.linuxserver.io/images/docker-oscam 
--->
+- [oscam](oscam/) : oscam is an Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards. It's both a server and a client.
 
 - [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
 <!-- TO DO
