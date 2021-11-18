@@ -64,13 +64,11 @@ https://github.com/zerafachris/hassio-addons
 
 - [pixapop](pixapop/) : Pixapop is an open-source single page application to view your photos in the easiest way possible.
 
-- [Rsnapshot](rsnapshot/) : Rsnapshot is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.
+<!-- - [Rsnapshot](rsnapshot/) : Rsnapshot is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required. -->
 
-<!-- TO DO
-https://docs.linuxserver.io/images/docker-smokeping
-https://docs.linuxserver.io/images/docker-taisun
+- [smokeping](smokeping/) : Smokeping keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.
 
- -->
+- [taisun](taisun/) : Taisun is an application for a Docker enabled device with an emphasis on providing a web based interface for managing a single server.
 
 [//]: # "ADDONLIST_END"
 [smb-shield]: https://img.shields.io/badge/SMB--green?style=plastic.svg

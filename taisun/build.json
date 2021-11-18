@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/taisun:arm32v7-latest",
+    "armv7": "linuxserver/taisun:arm32v7-latest",
+    "aarch64": "linuxserver/taisun:arm64v8-latest",
+    "amd64": "linuxserver/taisun:amd64-latest"
+  }
+}
