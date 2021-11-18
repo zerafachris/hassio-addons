@@ -54,8 +54,9 @@ https://github.com/zerafachris/hassio-addons
 
 - [Mylar3](mylar3/) : mylar3 is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.
 
+- [nano-wallet](nano-wallet/) : nano-wallet is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This is a nginx wrapper for the light wallet located [here](https://github.com/linuxserver/nano-wallet). You will need to pass a valid RPC host when accessing this container.
+
 <!-- TO DO 
-https://docs.linuxserver.io/images/docker-mylar3
 https://docs.linuxserver.io/images/docker-nano-wallet
 https://docs.linuxserver.io/images/docker-nntp2nntp
 https://docs.linuxserver.io/images/docker-oscam 

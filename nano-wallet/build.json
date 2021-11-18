@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/nano-wallet:arm32v7-latest",
+    "armv7": "linuxserver/nano-wallet:arm32v7-latest",
+    "aarch64": "linuxserver/nano-wallet:arm64v8-latest",
+    "amd64": "linuxserver/nano-wallet:amd64-latest"
+  }
+}
