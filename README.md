@@ -50,8 +50,11 @@ https://github.com/zerafachris/hassio-addons
 
 - [Limnoria](limnoria/) : Limnoria is a robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.
 
+- [mStream](mstream/) : mStream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.
+
+- [Mylar3](mylar3/) : mylar3 is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.
+
 <!-- TO DO 
-https://docs.linuxserver.io/images/docker-mstream
 https://docs.linuxserver.io/images/docker-mylar3
 https://docs.linuxserver.io/images/docker-nano-wallet
 https://docs.linuxserver.io/images/docker-nntp2nntp
