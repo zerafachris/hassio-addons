@@ -59,6 +59,10 @@ https://github.com/zerafachris/hassio-addons
 - [oscam](oscam/) : oscam is an Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards. It's both a server and a client.
 
 - [overseerr](overseerr/) : Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
+
+- [photoshow](photoshow/) : Photoshow is gallery software at its easiest, it doesn't even require a database.
+
+
 <!-- TO DO
 https://docs.linuxserver.io/images/docker-photoshow
 https://docs.linuxserver.io/images/docker-pixapop
