@@ -2,7 +2,7 @@
   "apparmor": true,
   "arch": ["aarch64", "amd64", "armv7", "armhf"],
   "boot": "auto",
-  "description": "mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
+  "description": "mylar3 is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.",
   "devices": [
     "/dev/sda1",
     "/dev/sdb1",
@@ -21,21 +21,19 @@
   ],
   "environment": {
     "PUID": "0",
-    "PGID": "0",
-    "TZ" : "Europe/Paris"
+    "PGID": "0"
   },
   "map": ["config:rw", "share:rw", "media:rw", "ssl"],
-  "name": "mstream",
+  "name": "mylar3",
   "options": {
     "PUID": 0,
-    "PGID": 0,
-    "TZ" : "Europe/Paris"
+    "PGID": 0
   },
   "ports": {
-    "3000/tcp": 3000
+    "8090/tcp": 8090
   },
   "ports_description": {
-    "3000/tcp": "web interface"
+    "8090/tcp": "web interface"
   },
   "privileged": ["SYS_ADMIN", "DAC_READ_SEARCH"],
   "schema": {
@@ -43,10 +41,10 @@
     "PGID": "int",
     "TZ": "str?"
   },
-  "slug": "mstream",
+  "slug": "mylar3",
   "startup": "services",
   "upstream": "3.2.2.5080",
   "url": "https://github.com/zerafachris/hassio-addons",
   "version": "0.0.0.1",
-  "webui": "http://[HOST]:[PORT:3000]"
+  "webui": "http://[HOST]:[PORT:8090]"
 }
