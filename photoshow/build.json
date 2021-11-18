@@ -1,0 +1,8 @@
+{
+  "build_from": {
+    "armhf": "linuxserver/photoshow:arm32v7-latest",
+    "armv7": "linuxserver/photoshow:arm32v7-latest",
+    "aarch64": "linuxserver/photoshow:arm64v8-latest",
+    "amd64": "linuxserver/photoshow:amd64-latest"
+  }
+}

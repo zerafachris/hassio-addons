@@ -1,0 +1,51 @@
+{
+  "apparmor": true,
+  "arch": ["aarch64", "amd64", "armv7", "armhf"],
+  "boot": "auto",
+  "description": "photoshow is gallery software at its easiest, it doesn't even require a database.",
+  "devices": [
+    "/dev/sda1",
+    "/dev/sdb1",
+    "/dev/sdc1",
+    "/dev/sdd1",
+    "/dev/sde1",
+    "/dev/sdf1",
+    "/dev/sdg1",
+    "/dev/sda2",
+    "/dev/sdb2",
+    "/dev/sdc2",
+    "/dev/sdd2",
+    "/dev/sde2",
+    "/dev/sdf2",
+    "/dev/sdg2"
+  ],
+  "environment": {
+    "PUID": "0",
+    "PGID": "0"
+  },
+  "map": ["config:rw", "share:rw", "media:rw", "ssl"],
+  "name": "photoshow",
+  "options": {
+    "PUID": 0,
+    "PGID": 0,
+    "TZ":"Europe/Paris"
+  },
+  "ports": {
+    "80/tcp": 80
+  },
+  "ports_description": {
+    "80/tcp": "web interface"
+  },
+  "privileged": ["SYS_ADMIN", "DAC_READ_SEARCH"],
+  "schema": {
+    "PUID": "int",
+    "PGID": "int",
+    "TZ": "str?"
+  },
+  "slug": "photoshow",
+  "startup": "services",
+  "upstream": "3.2.2.5080",
+  "url": "https://github.com/zerafachris/hassio-addons",
+  "version": "0.0.0.1",
+  "webui": "http://[HOST]:[PORT:80]"
+}
