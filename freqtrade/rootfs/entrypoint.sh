@@ -2,9 +2,6 @@
 
 echo "Starting"
 
-#!/usr/bin/env bash
-#encoding=utf8
-
 function echo_block() {
     echo "----------------------------"
     echo $1
@@ -253,27 +250,9 @@ function help() {
 # Verify if 3.7 or 3.8 is installed
 check_installed_python
 
-case $* in
---install|-i)
-install
-;;
---config|-c)
-config
-;;
---update|-u)
 update
-;;
---reset|-r)
-reset
-;;
---plot|-p)
-plot
-;;
-*)
-help
-;;
-esac
-exit 0
+
+install
 
 if [ ! -f /data/config.json ]; then
   echo "building userdir"
