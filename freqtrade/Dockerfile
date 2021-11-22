@@ -10,8 +10,13 @@ RUN \
     ################
     # Install apps #
     ################
-    apt-get update \
+    apt-get update \ 
     && apt-get install -y --no-install-recommends jq git \
+    && apt-get -y install sudo libatlas3-base curl sqlite3 libhdf5-serial-dev \
+    && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake wget \
+    && apt-get -y install gcc autoconf libtool pkg-config make libpython3-dev python3-venv python3-dev python-dev \
+    && apt-get clean \
+    && pip install --upgrade pip \
     \    
     ###################
     # Install bashio #
@@ -25,6 +30,23 @@ RUN \
 
 VOLUME [ "/data" ]
 WORKDIR /
+
+
+### "install ta-lib"
+RUN chmod -R 777 /freqtrade \
+    && wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz \
+    && tar -zxvf ta-lib-0.4.0-src.tar.gz \
+    && cd ta-lib \
+    && sed -i.bak "s|0.00000001|0.000000000000000001 |g" src/ta_func/ta_utility.h \
+    && curl 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD' -o config.guess \
+    && curl 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD' -o config.sub \
+    && ./configure --prefix=${INSTALL_LOC}/ \
+    && make \
+    && which sudo && sudo make install || make install \
+    &&  sudo ldconfig \
+    && cd .. && rm -rf ./ta-lib/
+
+
 RUN chmod 777 /entrypoint.sh
 ENTRYPOINT [ "/bin/bash" ]
 CMD [ "/entrypoint.sh" ] 

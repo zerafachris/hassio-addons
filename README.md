@@ -48,7 +48,7 @@ https://github.com/zerafachris/hassio-addons
 
 - [Fleet](fleet/) : Fleet provides an online web interface which displays a set of maintained images from one or more owned repositories.
 
-- [freqtrade](freqtrade/) : Freqtrade is a free and open source crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram. It contains backtesting, plotting and money management tools as well as strategy optimization by machine learning.
+<!-- - [freqtrade](freqtrade/) : Freqtrade is a free and open source crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram. It contains backtesting, plotting and money management tools as well as strategy optimization by machine learning. -->
 
 
 - [Limnoria](limnoria/) : Limnoria is a robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.
